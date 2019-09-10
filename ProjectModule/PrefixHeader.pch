@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  ProjectModule
+//
+//  Created by xianwen on 2019/8/13.
+//  Copyright © 2019 xianwen. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "ICCommon.h"
+#import "ICTools.h"
+#import "ICCategory.h"
+#import "BaseViewController.h"
+
+#endif /* PrefixHeader_pch */

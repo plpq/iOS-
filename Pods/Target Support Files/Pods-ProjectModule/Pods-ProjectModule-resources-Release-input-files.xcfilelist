@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-ProjectModule/Pods-ProjectModule-resources.sh
+${PODS_ROOT}/KJBannerView/KJBannerViewDemo/KJBannerView/KJBannerView.bundle
+${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle
+${PODS_ROOT}/WHToast/WHToast/wtoast_icon/whtoast_error.png
+${PODS_ROOT}/WHToast/WHToast/wtoast_icon/whtoast_error@2x.png
+${PODS_ROOT}/WHToast/WHToast/wtoast_icon/whtoast_error@3x.png
+${PODS_ROOT}/WHToast/WHToast/wtoast_icon/whtoast_success.png
+${PODS_ROOT}/WHToast/WHToast/wtoast_icon/whtoast_success@2x.png
+${PODS_ROOT}/WHToast/WHToast/wtoast_icon/whtoast_success@3x.png

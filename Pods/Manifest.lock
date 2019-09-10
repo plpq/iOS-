@@ -1,0 +1,62 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - KJBannerView (1.2.6):
+    - KJBannerView/KJBannerView (= 1.2.6)
+  - KJBannerView/KJBannerView (1.2.6)
+  - Masonry (1.1.0)
+  - SDWebImage (5.1.0):
+    - SDWebImage/Core (= 5.1.0)
+  - SDWebImage/Core (5.1.0)
+  - TZImagePickerController (3.2.2)
+  - WechatOpenSDK (1.8.4)
+  - WHToast (0.0.3)
+  - XXShield (2.2.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - KJBannerView
+  - Masonry
+  - SDWebImage
+  - TZImagePickerController
+  - WechatOpenSDK
+  - WHToast
+  - XXShield
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - KJBannerView
+    - Masonry
+    - SDWebImage
+    - TZImagePickerController
+    - WechatOpenSDK
+    - WHToast
+    - XXShield
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  KJBannerView: ea93af0abaf9062393a5b1e44897ebf9865dcdcd
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
+  TZImagePickerController: 44aa49cf35b1e88fe292be955e15b9003a5b1d83
+  WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
+  WHToast: 30d7f1734ff57b391da4050fab13a2af0e95638c
+  XXShield: 1627b07bbc34be33040b2fed774cc4bae37c36eb
+
+PODFILE CHECKSUM: a2786f8fb1777f40d2df3c38e132cf79d1f99e37
+
+COCOAPODS: 1.8.0.beta.2
