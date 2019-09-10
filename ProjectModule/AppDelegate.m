@@ -39,7 +39,7 @@
     #endif
     
     //调用系统接口判断版本,替换appID
-    [ICTools checkVersionNeedUpdate:@"8768989879"];
+    [ICTools checkVersionNeedUpdate:@"12345678"];
     //调用自己服务端接口判断版本,在接口返回结果里调用,同样传入appID
    // [ICTools showUpdateAlertCtl:appID];
     
