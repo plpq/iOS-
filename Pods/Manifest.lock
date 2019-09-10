@@ -14,9 +14,15 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - KJBannerView (1.2.6):
     - KJBannerView/KJBannerView (= 1.2.6)
   - KJBannerView/KJBannerView (1.2.6)
+  - LLDebugTool (1.3.0):
+    - FMDB
+  - LookinServer (0.9.4)
   - Masonry (1.1.0)
   - SDWebImage (5.1.0):
     - SDWebImage/Core (= 5.1.0)
@@ -29,6 +35,8 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - KJBannerView
+  - LLDebugTool
+  - LookinServer
   - Masonry
   - SDWebImage
   - TZImagePickerController
@@ -39,7 +47,10 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - FMDB
     - KJBannerView
+    - LLDebugTool
+    - LookinServer
     - Masonry
     - SDWebImage
     - TZImagePickerController
@@ -49,7 +60,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   KJBannerView: ea93af0abaf9062393a5b1e44897ebf9865dcdcd
+  LLDebugTool: 048abee5e666157db6cf07bc9f3289ec2c491e2e
+  LookinServer: 54eb99921647bda4068ff8776d842285e2bf0adb
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
   TZImagePickerController: 44aa49cf35b1e88fe292be955e15b9003a5b1d83
@@ -57,6 +71,6 @@ SPEC CHECKSUMS:
   WHToast: 30d7f1734ff57b391da4050fab13a2af0e95638c
   XXShield: 1627b07bbc34be33040b2fed774cc4bae37c36eb
 
-PODFILE CHECKSUM: a2786f8fb1777f40d2df3c38e132cf79d1f99e37
+PODFILE CHECKSUM: 290d5d6e1682d7ceb9581c7eb1508f0ae5f38c63
 
 COCOAPODS: 1.8.0.beta.2

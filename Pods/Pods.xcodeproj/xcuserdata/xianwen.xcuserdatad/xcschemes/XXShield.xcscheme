@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1FF73AA9B7CE979E7F6DFC7725D89ACC"
-               BuildableName = "libXXShield.a"
+               BuildableName = "XXShield.framework"
                BlueprintName = "XXShield"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

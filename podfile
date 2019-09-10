@@ -1,7 +1,9 @@
 platform:ios,'8.0'
+use_frameworks!
 
 target'ProjectModule'do
-
+  
+pod 'LLDebugTool'
 pod 'WechatOpenSDK'
 pod 'AFNetworking'
 pod 'Masonry'
@@ -10,6 +12,7 @@ pod 'WHToast'
 pod 'SDWebImage'
 pod 'TZImagePickerController'
 pod 'XXShield'
+pod 'LookinServer', :configurations => ['Debug']
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|

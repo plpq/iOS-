@@ -5,7 +5,7 @@
 //  Created by xianwen on 2019/8/7.
 //  Copyright © 2019 xianwen. All rights reserved.
 //
-
+#import <LLDebug.h>
 #import "AppDelegate.h"
 #import "ICPushService.h"
 #import "ViewController.h"
@@ -20,28 +20,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-
- //   [self setCrashHandle];
     
-//    ICPushService *service = [ICPushService defaultPushService];
-//   // service.type = EncryptionTypeNone;
-//    service.hostStr = @"xxxxxx";
-//    [service ICPushApplication:application didFinishLaunchingWithOptions:launchOptions];
+    ICPushService *service = [ICPushService defaultPushService];
+   // service.type = EncryptionTypeNone;
+    service.hostStr = @"xxxxxx";
+    [service ICPushApplication:application didFinishLaunchingWithOptions:launchOptions];
     
     UINavigationController *navCtl = [[UINavigationController alloc]initWithRootViewController:[ViewController new]];
     self.window.rootViewController = navCtl;
 
     
     #ifdef DEBUG
- //   [[LLDebugTool sharedTool] startWorking];
+    [[LLDebugTool sharedTool] startWorking];
     
-//    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
-//    [self.window addGestureRecognizer:longPress];
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
+    [self.window addGestureRecognizer:longPress];
     
     #endif
     
     //调用系统接口判断版本,替换appID
-//    [ICTools checkVersionNeedUpdate:@"8768989879"];
+    [ICTools checkVersionNeedUpdate:@"8768989879"];
     //调用自己服务端接口判断版本,在接口返回结果里调用,同样传入appID
    // [ICTools showUpdateAlertCtl:appID];
     
@@ -80,50 +78,26 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-//- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
-//
-//    if ([ICPushService defaultPushService].type == EncryptionTypeNone) {
-//        
-//          [[ICPushService defaultPushService] ICPushApplication:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-//    }
-//    else{
-//        
-//        //可做加密加签处理
-//        NSString *urlStr = [NSString stringWithFormat:@"%@?deviceToken=%@",[ICPushService defaultPushService].hostStr,[ICPushService defaultPushService].deviceTokenStr];
-//        [[ICPushService defaultPushService] sendDeviceTokenToService:urlStr];
-//    }
-//    
-//}
-//
-//- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
-//    
-//    [[ICPushService defaultPushService] ICPushApplication:application didFailToRegisterForRemoteNotificationsWithError:error];
-//}
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
 
-#pragma mark- AvoidCrash
-
-- (void)setCrashHandle{
+    if ([ICPushService defaultPushService].type == EncryptionTypeNone) {
+        
+          [[ICPushService defaultPushService] ICPushApplication:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    }
+    else{
+        
+        //可做加密加签处理
+        NSString *urlStr = [NSString stringWithFormat:@"%@?deviceToken=%@",[ICPushService defaultPushService].hostStr,[ICPushService defaultPushService].deviceTokenStr];
+        [[ICPushService defaultPushService] sendDeviceTokenToService:urlStr];
+    }
     
-//    [AvoidCrash makeAllEffective];
-//    NSArray *noneSelClassStrings = @[
-//                                     @"NSNull",
-//                                     @"NSNumber",
-//                                     @"NSString",
-//                                     @"NSDictionary",
-//                                     @"NSArray"
-//                                     ];
-//
-//    [AvoidCrash setupNoneSelClassStringsArr:noneSelClassStrings];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dealwithCrashMessage:) name:AvoidCrashNotification object:nil];
 }
 
-//- (void)dealwithCrashMessage:(NSNotification *)note {
-//    
-//    // NSLog(@"bug:%@",note.userInfo);
-//    NSDictionary *info = note.userInfo;
-//    NSString *errorReason = [NSString stringWithFormat:@"【ErrorReason】%@========【ErrorPlace】%@========【DefaultToDo】%@========【ErrorName】%@", info[@"errorReason"], info[@"errorPlace"], info[@"defaultToDo"], info[@"errorName"]];
-//    NSLog(@"%@",errorReason);
-//}
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
+    
+    [[ICPushService defaultPushService] ICPushApplication:application didFailToRegisterForRemoteNotificationsWithError:error];
+}
+
 
 
 

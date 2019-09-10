@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BF686B1733D9752C1E7E87061E8208E5"
-               BuildableName = "libKJBannerView.a"
+               BuildableName = "KJBannerView.framework"
                BlueprintName = "KJBannerView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

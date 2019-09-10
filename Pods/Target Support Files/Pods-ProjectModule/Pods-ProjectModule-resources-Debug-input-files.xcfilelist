@@ -1,5 +1,17 @@
 ${PODS_ROOT}/Target Support Files/Pods-ProjectModule/Pods-ProjectModule-resources.sh
 ${PODS_ROOT}/KJBannerView/KJBannerViewDemo/KJBannerView/KJBannerView.bundle
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Component/Crash/UserInterface/LLCrashCell.xib
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Component/Crash/UserInterface/LLCrashContentCell.xib
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Component/Hierarchy/UserInterface/LLHierarchyCell.xib
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Component/Hierarchy/UserInterface/LLHierarchyDetailCell.xib
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Component/Log/UserInterface/LLLogCell.xib
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Component/Network/UserInterface/LLNetworkCell.xib
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Component/Network/UserInterface/LLNetworkImageCell.xib
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Component/Sandbox/UserInterface/LLSandboxCell.xib
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Others/CommonUI/LLFilterView/LLFilterLabelCell.xib
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Others/CommonUI/LLFilterView/LLFilterTextFieldCell.xib
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Others/CommonUI/LLSubTitleTableViewCell/LLSubTitleTableViewCell.xib
+${PODS_ROOT}/LLDebugTool/LLDebugTool/Core/Others/Resource/LLDebugTool.bundle
 ${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle
 ${PODS_ROOT}/WHToast/WHToast/wtoast_icon/whtoast_error.png
 ${PODS_ROOT}/WHToast/WHToast/wtoast_icon/whtoast_error@2x.png

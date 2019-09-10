@@ -7,7 +7,7 @@
 //
 
 #import <XXShield/XXShieldSDK.h>
-#import "ViewController.h"
+#import "BaseViewController.h"
 
 @interface SDKSetup : NSObject <XXRecordProtocol>
 
@@ -18,12 +18,12 @@
 + (void)load {
     
     [XXShieldSDK registerRecordHandler:[self new]];
-    [XXShieldSDK registerStabilityWithAbility:(EXXShieldTypeDangLingPointer) withClassNames:@[NSStringFromClass([ViewController class])]];
+    [XXShieldSDK registerStabilityWithAbility:(EXXShieldTypeDangLingPointer) withClassNames:@[NSStringFromClass([BaseViewController class])]];
     [XXShieldSDK registerStabilitySDK];
 }
 
 - (void)recordWithReason:(NSError *)reason {
-    NSLog(@"----------------------------------------------------------------------------------------------------");
+    
     NSLog(@"XXShield has catch a non-fatal error: error is %@", reason);
 }
 

@@ -47,6 +47,12 @@
     }
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    NSArray *ary = @[];
+    [ary objectAtIndex:1];
+}
+
 - (void)dealloc{
     
     ICLog(@"haha");

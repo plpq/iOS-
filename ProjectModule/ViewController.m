@@ -51,9 +51,6 @@
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-    NSArray *ary = @[@"32"];
-    [ary objectAtIndex:0];
 
     
     TestViewController *testCtl = [[TestViewController alloc]init];

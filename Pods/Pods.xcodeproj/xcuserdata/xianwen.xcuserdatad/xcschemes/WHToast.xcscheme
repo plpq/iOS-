@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DCD0DEEDE9CB35945D67203F112697C6"
-               BuildableName = "libWHToast.a"
+               BuildableName = "WHToast.framework"
                BlueprintName = "WHToast"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
